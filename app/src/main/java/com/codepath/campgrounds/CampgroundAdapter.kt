@@ -42,16 +42,14 @@ class CampgroundAdapter(private val context: Context, private val campgrounds: L
         }
 
         fun bind(campground: Campground) {
-            // TODO: Set item views based on views and data model
-            fun bind(campground: Campground) {
-                nameTextView.text = campground.name
-                descriptionTextView.text = campground.description
-                locationTextView.text = campground.latLong
 
-                Glide.with(context)
-                    .load(campground.imageUrl)
-                    .into(imageView)
-            }
+            nameTextView.text = campground.name
+            descriptionTextView.text = campground.description
+            locationTextView.text = campground.latLong
+
+            Glide.with(context)
+                .load(campground.imageUrl)
+                .into(imageView)
 
         }
 
